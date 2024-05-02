@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.refrigerator {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: linear-gradient(135deg, #8c8c8c, #bfbfbf, #8c8c8c); /* Metallic gradient */
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #000000; /* Set the border of the refrigerator */
+  
+
+.divider {
+  height: 100px; /* Adjust as needed */
+}
+
+.button-container {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+
+.tree {
+  cursor: pointer;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+  bottom: 10%;
+}
+
+.green-tree {
+  left: 10px;
+}
+
+.yellow-tree {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.red-tree {
+  right: 10px;
+}
+
+
+.magnets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.magnet {
+  width: 80px;
+  height: 40px;
+  padding: 5px 10px;
+  color: #000000; /* Black text color */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  font-family: 'Roboto', sans-serif; /* Font family */
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.magnet:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+
+/* Word magnets */
+.word-magnet {
+  background: linear-gradient(135deg, #ff6f00, #ff8f00, #ff6f00); /* Metallic orange gradient */
+}
+
+/* Tree magnets */
+.tree-magnet {
+  width: 100px;
+  height: 60px;
+  background-color: #e0e0e0;
+}
+
+/* Example hover effect */
+.word-magnet:hover,
+.tree-magnet:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
